@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="537.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cifrado.alberti.alberti2.Controller">
+
+    <AnchorPane prefHeight="166.0" prefWidth="537.0">
+
+
+        <PasswordField fx:id="texto" layoutX="163.0" layoutY="14.0" prefHeight="30.0" prefWidth="352.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </PasswordField>
+
+        <TextField fx:id="primaria" layoutX="162.0" layoutY="61.0" prefHeight="30.0" prefWidth="49.0" promptText="  ">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <JFXButton fx:id="button" layoutX="395.0" layoutY="61.0" onAction="#generateCripto" prefHeight="30.0" prefWidth="120.0" ripplerFill="darkorchid" style="-fx-background-color: #2e7bb7;" text="Codificar" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <effect>
+                <Blend mode="DARKEN" />
+            </effect>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </JFXButton>
+        <TextArea fx:id="result" editable="false" layoutX="22.0" layoutY="110.0" prefHeight="30.0" prefWidth="493.0" promptText="El resultado aparecera aqui ..">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextArea>
+        <Label layoutX="57.0" layoutY="19.0" text="Ingrese texto">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+      <Label layoutX="18.0" layoutY="68.0" prefWidth="120.0" text="Ingrese letra inicial">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
+        <effect>
+            <Glow level="0.27" />
+        </effect>
+    </AnchorPane>
+</StackPane>
